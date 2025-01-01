@@ -3,6 +3,7 @@ const output = document.getElementById("output");
 
 // Add a loading row by default
 const loadingRow = document.createElement("tr");
+loadingRow.id = "loading"; // Add ID for Cypress
 loadingRow.innerHTML = `<td colspan="2" class="text-center">Loading...</td>`;
 output.appendChild(loadingRow);
 
